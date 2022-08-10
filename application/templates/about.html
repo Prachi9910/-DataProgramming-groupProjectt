@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+
+<html lang="en">
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*
+body
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   width: 100%;
+   background: #ffffff;
+}
+.container
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.container .card
+{
+   width: 330px;
+   height: 416px;
+   padding: 60px 30px;
+   margin: 20px;
+   background: #ffffff;
+   box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+               -0.5em -0.5em 1em #ffffff;
+   border-radius: 20px;
+}
+.container .card .content
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.container .card .content .imgBx
+{
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 20px;
+   overflow: hidden;
+}
+.container .card .content .imgBx img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.container .card .content .contentBx h4
+{
+   color: #36187d;
+   font-size: 1.7rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+}
+.container .card .content .contentBx h5
+{
+   color: #6c758f;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-align: center;
+}
+/*   colors
+        #f2f3f7
+        #d2dce9
+        #36187d
+        #6c758f
+        #0196e3
+ */
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <div class="imgBx">
+                    <img src="/static/om.jpeg" alt="">
+                </div>
+                <div class="contentBx">
+                    <h4>Om Patel</h4>
+                    <h5>200511321</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="imgBx">
+                    <img src="/static/prachi.jpeg" alt="">
+                </div>
+                <div class="contentBx">
+                    <h4>Prachiben Patel</h4>
+                    <h5>200520109</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="imgBx">
+                    <img src="/static/ravi.jpeg" alt="">
+                </div>
+                <div class="contentBx">
+                    <h4>Ravi Sitapara</h4>
+                    <h5>200517436</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+{% endblock %}
